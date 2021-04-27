@@ -32,12 +32,10 @@ public class PinterestTest {
         
         System.out.println(dashboardPage.getMainCardTitle());
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));
-        SearchItem searchText=dashboardPage.goToSearch();
-        searchText.Search("wooden desk");
-
-
-        //LogoutPage logout=dashboardPage.logout();
-        //logout.logOut();
+        //SearchItem searchText=dashboardPage.goToSearch();
+        //searchText.Search("wooden desk");
+        LogoutPage logout=dashboardPage.logout();
+        logout.logOut();
         
 
     }

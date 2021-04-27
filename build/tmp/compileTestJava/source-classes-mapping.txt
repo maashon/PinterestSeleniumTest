@@ -8,7 +8,7 @@ SearchItem.java
  SearchItem
 MainPage.java
  MainPage
-PinterestTest.java
- PinterestTest
 LoginPage.java
  LoginPage
+PinterestTest.java
+ PinterestTest
