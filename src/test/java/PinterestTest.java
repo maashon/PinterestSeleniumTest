@@ -26,7 +26,7 @@ public class PinterestTest {
         driver.manage().window().maximize();
     }
     
-    @Test
+   @Test
     public void loginLogout() {
         MainPage mainPage = new MainPage(this.driver);
         LoginPage loginPage = mainPage.openLogin();
@@ -48,9 +48,8 @@ public class PinterestTest {
         LoginPage loginPage = mainPage.openLogin();
         DashboardPage dashboardPage = loginPage.login("yibobid409@gridmire.com","Parsa@1234");
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));
-        //SearchItem searchText=dashboardPage.goToSearch();
-        //searchText.Search("wooden desk");
-
+        SearchItem searchText=dashboardPage.goToSearch();
+        
 
 
 

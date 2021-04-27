@@ -16,11 +16,12 @@ class DashboardPage extends PageBase {
 
     private By mainCardBy = By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[2]/div/div/div[1]");
     private By body = By.tagName("body");
-    private By SearchIcon=By.xpath("//*[@id=\"searchBoxContainer\"]/div");
+    private By SearchIcon=By.xpath("//*[@id=\"searchBoxContainer\"]/div/div/div[3]/input");
     private By LogoutMenu= By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div[4]/div[5]/button/div");
     private By LogBar=By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[4]/div[6]/div/div/div/div/div/div/div[2]/div/div[2]/div[6]/div/div/div/div/div");
-    private By HomePageAbout=By.xpath("//*[@id=\"__PWS_ROOT__\"]/div[1]/div/div/div/div[1]/div[1]/div[2]/div[1]/div[1]/div/a");
-   
+    private By HomePageAbout=By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[2]/div/div/div[1]");
+    private By SearchBarLoadedElement= By.xpath("//div[@title=\"Ideas for you\"]");
+    private By SearchBar=By.xpath("//*[@id=\"searchBoxContainer\"]/div/div/div[3]/input");
     public DashboardPage(WebDriver driver) {
         super(driver);
     }    
@@ -36,10 +37,8 @@ class DashboardPage extends PageBase {
     }
 
     public SearchItem goToSearch(){
-
-        this.waitAndReturnElement(SearchIcon).click();
-       
-
+        this.waitAndReturnElement(SearchBar).sendKeys("wood\n");
+        this.waitAndReturnElement(body);
         return new SearchItem(this.driver);
     }
 
