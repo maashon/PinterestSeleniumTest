@@ -6,7 +6,7 @@ PageBase.java
  PageBase
 MainPage.java
  MainPage
-PinterestTest.java
- PinterestTest
 LoginPage.java
  LoginPage
+PinterestTest.java
+ PinterestTest

@@ -32,6 +32,8 @@ public class PinterestTest {
         
         System.out.println(dashboardPage.getMainCardTitle());
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));
+        dashboardPage.logout();
+
     }
     
 
