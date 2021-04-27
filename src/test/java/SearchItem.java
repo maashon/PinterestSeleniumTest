@@ -16,14 +16,20 @@ class SearchItem extends PageBase {
     
     //*[@id="searchBoxContainer"]
     private By HomePageAbout=By.xpath("//*[@id=\"__PWS_ROOT__\"]/div[1]/div/div/div/div[1]/div[1]/div[2]/div[1]/div[1]/div/a");
-    private By SearchBar=By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div[3]");
+    private By SearchBar=By.xpath("//*[@id=\"searchBoxContainer\"]");
+    private By SearchInput=By.xpath("//*[@id=\"searchBoxContainer\"]/div/div/div[3]/input");
     public SearchItem(WebDriver driver) {
         super(driver);
     }  
     
     public void Search(String inputData){
-        this.waitAndReturnElement(SearchBar).sendKeys(inputData+"\n");
-        this.waitAndReturnElement(HomePageAbout);   
+        this.waitAndReturnElement(SearchBar).click();
+       //this.waitAndReturnElement(SearchInput).sendKeys(inputData+"\n");
+      // this.waitAndReturnElement( HomePageAbout);
+      
+        
+
+        //this.waitAndReturnElement(HomePageAbout);   
     }
     
     
