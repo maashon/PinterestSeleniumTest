@@ -13,17 +13,11 @@ import org.openqa.selenium.NoSuchElementException;
 
 
 class LogoutPage extends PageBase {
-
+    private By LogoutButton=By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div[4]/div[6]/div/div/div/div/div/div/div[2]/div/div[2]/div[6]/div/div");
    
     public LogoutPage(WebDriver driver) {
         super(driver);
     }    
     
-   /* public DashboardPage login(String username, String password){
-        this.waitAndReturnElement(nameInputBoxBy).sendKeys(username);
-        this.waitAndReturnElement(passwordInputBoxBy).sendKeys(password+"\n");
-        this.wait.until(ExpectedConditions.visibilityOfElementLocated(MenuLocator));
-        return new DashboardPage(this.driver);
-    }*/
     
 }

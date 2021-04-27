@@ -28,7 +28,7 @@ public class PinterestTest {
     public void testSearch() {
         MainPage mainPage = new MainPage(this.driver);
         LoginPage loginPage = mainPage.openLogin();
-        DashboardPage dashboardPage = loginPage.login("velow29219@iludir.com","Parsa@1234");
+        DashboardPage dashboardPage = loginPage.login("yibobid409@gridmire.com","Parsa@1234");
         
         System.out.println(dashboardPage.getMainCardTitle());
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));

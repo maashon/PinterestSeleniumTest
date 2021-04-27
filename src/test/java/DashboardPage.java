@@ -16,7 +16,10 @@ class DashboardPage extends PageBase {
 
     private By mainCardBy = By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[2]/div/div/div[1]");
     public By bodyBy = By.tagName("body");
-    private By LogoutMenu= By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[4]/div[5]/button");
+    
+    private By LogoutMenu= By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div[4]/div[5]/button/div");
+    private By LogBar=By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[4]/div[6]/div/div/div/div/div/div/div[2]/div/div[2]/div[6]/div/div/div/div/div");
+    
     public DashboardPage(WebDriver driver) {
         super(driver);
     }    
@@ -28,8 +31,11 @@ class DashboardPage extends PageBase {
     }
     public LogoutPage logout(){
         this.waitAndReturnElement(LogoutMenu).click();
+        this.waitAndReturnElement(LogBar).click();
+        System.out.println("calling the logout func\n");
         //this.waitAndReturnElement(passwordInputBoxBy).sendKeys(password+"\n");
-       // this.wait.until(ExpectedConditions.visibilityOfElementLocated(MenuLocator));
+       // this.wait.until(ExpectedConditions.visibilityOfElementLocated(MenuLocator));wwww
+       
         return new LogoutPage(this.driver);
 
 
