@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PinterestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-27T10:25:39" hostname="DESKTOP-1QC9MIT" time="18.373">
+<testsuite name="PinterestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-27T10:53:27" hostname="DESKTOP-1QC9MIT" time="19.166">
   <properties/>
-  <testcase name="testSearch" classname="PinterestTest" time="18.373"/>
+  <testcase name="testSearch" classname="PinterestTest" time="19.166"/>
   <system-out><![CDATA[Home
 Y
-Design Milk
+YesStyle.com
+Kamu
+Privacy
+Pinterest is using cookies to help give you the best experience we can.
+Learn More
+Got it!
 calling the logout func
 
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14544
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 20205
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
