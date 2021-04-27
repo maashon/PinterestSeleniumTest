@@ -1,5 +1,7 @@
 import org.junit.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import jdk.jfr.Timestamp;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,21 +27,37 @@ public class PinterestTest {
     }
     
     @Test
-    public void testSearch() {
+    public void loginLogout() {
         MainPage mainPage = new MainPage(this.driver);
         LoginPage loginPage = mainPage.openLogin();
         DashboardPage dashboardPage = loginPage.login("velow29219@iludir.com","Parsa@1234");
         
         System.out.println(dashboardPage.getMainCardTitle());
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));
-        //SearchItem searchText=dashboardPage.goToSearch();
-        //searchText.Search("wooden desk");
+        
         LogoutPage logout=dashboardPage.logout();
         logout.logOut();
+
+        
         
 
     }
-    
+@Test
+    public void searchTest(){
+        MainPage mainPage = new MainPage(this.driver);
+        LoginPage loginPage = mainPage.openLogin();
+        DashboardPage dashboardPage = loginPage.login("yibobid409@gridmire.com","Parsa@1234");
+        Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));
+        //SearchItem searchText=dashboardPage.goToSearch();
+        //searchText.Search("wooden desk");
+
+
+
+
+
+    }  
+   
+     
 
     
     @After

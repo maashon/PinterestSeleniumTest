@@ -28,17 +28,11 @@ class DashboardPage extends PageBase {
     public String getMainCardTitle(){
         WebElement bodyElement = this.waitAndReturnElement(body);
         return bodyElement.getText();
-        //return this.waitAndReturnElement(mainCardBy).getText();
     }
     public LogoutPage logout(){
         this.waitAndReturnElement(LogoutMenu).click();
         this.waitAndReturnElement(LogBar).click();
-        System.out.println("calling the logout func\n");
-        
-       
         return new LogoutPage(this.driver);
-
-
     }
 
     public SearchItem goToSearch(){

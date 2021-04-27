@@ -2,10 +2,10 @@ LogoutPage.java
  LogoutPage
 PageBase.java
  PageBase
-DashboardPage.java
- DashboardPage
 SearchItem.java
  SearchItem
+DashboardPage.java
+ DashboardPage
 MainPage.java
  MainPage
 LoginPage.java
