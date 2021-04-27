@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DoodleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-26T19:02:07" hostname="DESKTOP-1QC9MIT" time="8.483">
+<testsuite name="PinterestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-27T06:31:28" hostname="DESKTOP-1QC9MIT" time="14.716">
   <properties/>
-  <testcase name="testSearch" classname="DoodleTest" time="8.483"/>
+  <testcase name="testSearch" classname="PinterestTest" time="14.716"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 32437
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 39634
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.

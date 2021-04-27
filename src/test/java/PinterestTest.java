@@ -13,7 +13,7 @@ import org.openqa.selenium.NoSuchElementException;
 import java.util.*;  
 
 
-public class DoodleTest {
+public class PinterestTest {
     public WebDriver driver;
     
     @Before

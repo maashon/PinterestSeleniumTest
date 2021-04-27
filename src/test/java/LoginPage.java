@@ -16,6 +16,7 @@ class LoginPage extends PageBase {
 
     private By nameInputBoxBy = By.xpath("//*[@id=\"email\"]");
     private By passwordInputBoxBy = By.xpath("//*[@id=\"password\"]");
+    private By MenuLocator = By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[4]/div[3]/div/button");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -24,6 +25,7 @@ class LoginPage extends PageBase {
     public DashboardPage login(String username, String password){
         this.waitAndReturnElement(nameInputBoxBy).sendKeys(username);
         this.waitAndReturnElement(passwordInputBoxBy).sendKeys(password+"\n");
+        this.wait.until(ExpectedConditions.visibilityOfElementLocated(MenuLocator));
         return new DashboardPage(this.driver);
     }
     
