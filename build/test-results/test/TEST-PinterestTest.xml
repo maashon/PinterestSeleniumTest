@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PinterestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-27T08:50:44" hostname="DESKTOP-1QC9MIT" time="18.724">
+<testsuite name="PinterestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-27T09:57:59" hostname="DESKTOP-1QC9MIT" time="16.333">
   <properties/>
-  <testcase name="testSearch" classname="PinterestTest" time="18.724"/>
+  <testcase name="testSearch" classname="PinterestTest" time="16.333"/>
   <system-out><![CDATA[Home
 1
 V
-Ann Plans Travel
-SROKA | Trendy Women's Clothing Store
+Tophatter
+2.2k
+Save
+twitter.com
+R
+roidworld
+nogar007
+seoro
 Privacy
 Pinterest is using cookies to help give you the best experience we can.
 Learn More
@@ -15,7 +21,7 @@ Got it!
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 45979
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 12926
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.

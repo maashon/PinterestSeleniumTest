@@ -16,6 +16,7 @@ class DashboardPage extends PageBase {
 
     private By mainCardBy = By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[2]/div/div/div[1]");
     public By bodyBy = By.tagName("body");
+    private By LogoutMenu= By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[4]/div[5]/button");
     public DashboardPage(WebDriver driver) {
         super(driver);
     }    
@@ -25,4 +26,13 @@ class DashboardPage extends PageBase {
         return bodyElement.getText();
         //return this.waitAndReturnElement(mainCardBy).getText();
     }
+    public LogoutPage logout(){
+        this.waitAndReturnElement(LogoutMenu).click();
+        //this.waitAndReturnElement(passwordInputBoxBy).sendKeys(password+"\n");
+       // this.wait.until(ExpectedConditions.visibilityOfElementLocated(MenuLocator));
+        return new LogoutPage(this.driver);
+
+
+    }
+
 }
