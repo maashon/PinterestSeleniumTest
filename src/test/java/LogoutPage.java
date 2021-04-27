@@ -12,17 +12,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 
 
-class DashboardPage extends PageBase {
+class LogoutPage extends PageBase {
 
-    private By mainCardBy = By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[2]/div/div/div[1]");
-    public By bodyBy = By.tagName("body");
-    public DashboardPage(WebDriver driver) {
+   
+    public LogoutPage(WebDriver driver) {
         super(driver);
     }    
     
-    public String getMainCardTitle(){
-        WebElement bodyElement = this.waitAndReturnElement(bodyBy);
-        return bodyElement.getText();
-        //return this.waitAndReturnElement(mainCardBy).getText();
-    }
+   /* public DashboardPage login(String username, String password){
+        this.waitAndReturnElement(nameInputBoxBy).sendKeys(username);
+        this.waitAndReturnElement(passwordInputBoxBy).sendKeys(password+"\n");
+        this.wait.until(ExpectedConditions.visibilityOfElementLocated(MenuLocator));
+        return new DashboardPage(this.driver);
+    }*/
+    
 }

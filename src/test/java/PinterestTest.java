@@ -30,8 +30,8 @@ public class PinterestTest {
         LoginPage loginPage = mainPage.openLogin();
         DashboardPage dashboardPage = loginPage.login("velow29219@iludir.com","Parsa@1234");
         
-        //System.out.println(dashboardPage.getMainCardTitle());
-        //Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Velow"));
+        System.out.println(dashboardPage.getMainCardTitle());
+        Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));
     }
     
 
