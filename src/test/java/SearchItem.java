@@ -13,7 +13,7 @@ import org.openqa.selenium.NoSuchElementException;
 
 
 class SearchItem extends PageBase {
-    private By SearchIcon=By.xpath("//*[@id=\"searchBoxContainer\"]");
+    
     //*[@id="searchBoxContainer"]
     private By HomePageAbout=By.xpath("//*[@id=\"__PWS_ROOT__\"]/div[1]/div/div/div/div[1]/div[1]/div[2]/div[1]/div[1]/div/a");
     private By SearchBar=By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div[3]");
@@ -22,10 +22,8 @@ class SearchItem extends PageBase {
     }  
     
     public void Search(String inputData){
-        this.waitAndReturnElement(SearchIcon).click();
         this.waitAndReturnElement(SearchBar).sendKeys(inputData+"\n");
-        this.waitAndReturnElement(HomePageAbout);
-        
+        this.waitAndReturnElement(HomePageAbout);   
     }
     
     
