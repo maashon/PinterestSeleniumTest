@@ -14,10 +14,19 @@ import org.openqa.selenium.NoSuchElementException;
 
 class LogoutPage extends PageBase {
     private By LogoutButton=By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div[4]/div[6]/div/div/div/div/div/div/div[2]/div/div[2]/div[6]/div/div");
-   
+    private By HomePageAbout=By.xpath("//*[@id=\"__PWS_ROOT__\"]/div[1]/div/div/div/div[1]/div[1]/div[2]/div[1]/div[1]/div/a");
     public LogoutPage(WebDriver driver) {
         super(driver);
-    }    
+    }  
+    
+    public void logOut(){
+
+        this.waitAndReturnElement(LogoutButton).click();
+        this.waitAndReturnElement(HomePageAbout);
+        
+
+
+    }
     
     
 }

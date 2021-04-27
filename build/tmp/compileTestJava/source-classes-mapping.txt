@@ -1,12 +1,12 @@
 PageBase.java
  PageBase
+PinterestTest.java
+ PinterestTest
 DashboardPage.java
  DashboardPage
 LogoutPage.java
  LogoutPage
 MainPage.java
  MainPage
-PinterestTest.java
- PinterestTest
 LoginPage.java
  LoginPage
