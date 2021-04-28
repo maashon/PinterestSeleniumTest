@@ -48,9 +48,12 @@ public class PinterestTest {
         LoginPage loginPage = mainPage.openLogin();
         DashboardPage dashboardPage = loginPage.login("yibobid409@gridmire.com","Parsa@1234");
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));
-        SearchItem searchText=dashboardPage.goToSearch();
+        SearchItem searchTest=dashboardPage.goToSearch();
+        searchTest.search("wood");
+        LogoutPage logout=searchTest.logoutAfterSearch();
+        logout.logOut();
         
-
+//yibobid409@gridmire.com
 
 
 

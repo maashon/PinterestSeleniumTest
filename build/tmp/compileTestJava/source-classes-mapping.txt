@@ -1,14 +1,14 @@
 PageBase.java
  PageBase
-SearchItem.java
- SearchItem
 LogoutPage.java
  LogoutPage
 DashboardPage.java
  DashboardPage
+SearchItem.java
+ SearchItem
 MainPage.java
  MainPage
-LoginPage.java
- LoginPage
 PinterestTest.java
  PinterestTest
+LoginPage.java
+ LoginPage
