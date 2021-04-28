@@ -38,10 +38,7 @@ public class FillForm extends PageBase{
         this.waitAndReturnElement(Location).clear();
         this.waitAndReturnElement(Location).sendKeys(location);
         this.waitAndReturnElement(SaveNutton).click();
-        this.waitAndReturnElement(Title);
-
-
-        
+        this.waitAndReturnElement(Title);   
     }
     
 }
