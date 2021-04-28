@@ -18,7 +18,8 @@ class DashboardPage extends PageBase {
     private By body = By.tagName("body");
     private By LogoutMenu= By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div[4]/div[5]/button/div");
     private By LogBar=By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[4]/div[6]/div/div/div/div/div/div/div[2]/div/div[2]/div[6]/div/div/div/div/div");
-    
+    private By FillMenu=By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[4]/div[5]/button");
+    private By Settings=By.xpath("//*[@id=\"HeaderContent\"]/div/div/div/div[2]/div/div/div/div[4]/div[6]/div/div/div/div/div/div/div[2]/div/div[2]/div[1]");
     public DashboardPage(WebDriver driver) {
         super(driver);
     }    
@@ -35,6 +36,11 @@ class DashboardPage extends PageBase {
 
     public SearchItem goToSearch(){
         return new SearchItem(this.driver);
+    }
+    public FillForm goToFill(){
+        this.waitAndReturnElement(FillMenu).click();
+        this.waitAndReturnElement(Settings).click();
+        return new FillForm(this.driver);
     }
 
 }

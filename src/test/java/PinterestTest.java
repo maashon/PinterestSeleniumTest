@@ -25,7 +25,7 @@ public class PinterestTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
-    
+   
    @Test
     public void loginLogout() {
         MainPage mainPage = new MainPage(this.driver);
@@ -50,16 +50,24 @@ public class PinterestTest {
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains("Home"));
         SearchItem searchTest=dashboardPage.goToSearch();
         searchTest.search("wood");
-        LogoutPage logout=searchTest.logoutAfterSearch();
-        logout.logOut();
+        searchTest.logoutAfterSearch();
+     
         
-//yibobid409@gridmire.com
-
-
-
     }  
    
-     
+ 
+@Test 
+public void FillFormTest(){
+    MainPage mainPage = new MainPage(this.driver);
+    LoginPage loginPage = mainPage.openLogin();
+    DashboardPage dashboardPage = loginPage.login("velow29219@iludir.com","Parsa@1234");
+    FillForm fillForm=dashboardPage.goToFill();
+    fillForm.fillSettingForm("pourzargham","I am a selenium tester","www.google.com","Hungary");
+
+
+
+
+}   
 
     
     @After
